@@ -14,6 +14,11 @@ app.get('/berners-lee', (req,res)=> {
     let bernersHtml = path.resolve(__dirname,'./views/berners-lee.html')
     res.sendFile(bernersHtml);
 })
+app.get('/prueba', (req,res)=> {
+    let bernersHtml = path.resolve(__dirname,'./views/prueba.html')
+    res.sendFile(bernersHtml);
+})
+
 
 app.get('/clarke', (req,res)=> {
     let clarkeHtml = path.resolve(__dirname,'./views/clarke.html')
